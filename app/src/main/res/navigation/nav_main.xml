@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/authFragment">
+
+    <fragment
+        android:id="@+id/authFragment"
+        android:name="cn.edu.gdou.jakec.campusbooking.AuthFragment"
+        tools:layout="@layout/fragment_auth">
+        <action
+            android:id="@+id/action_authFragment_to_studyFragment"
+            app:destination="@id/studyFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out"
+            app:popUpTo="@id/authFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_authFragment_to_loginPwdFragment"
+            app:destination="@id/loginPwdFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_authFragment_to_signupFragment"
+            app:destination="@id/signupFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/studyFragment"
+        android:name="cn.edu.gdou.jakec.campusbooking.StudyFragment"
+        tools:layout="@layout/fragment_study">
+        <action
+            android:id="@+id/action_studyFragment_to_authFragment"
+            app:destination="@id/authFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out"
+            app:popUpTo="@id/studyFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_studyFragment_to_studyRoomFragment"
+            app:destination="@id/studyRoomFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_studyFragment_to_studyOrderFragment"
+            app:destination="@id/studyOrderFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_studyFragment_to_scanFragment"
+            app:destination="@id/scanFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_studyFragment_to_profileFragment"
+            app:destination="@id/profileFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_studyFragment_to_manageFragment"
+            app:destination="@id/manageFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_studyFragment_to_manageStudyRoomFragment"
+            app:destination="@id/manageStudyRoomFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_studyFragment_to_manageStudyRoomApplyFrament"
+            app:destination="@id/manageStudyRoomApplyFrament"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_studyFragment_to_messageFragment"
+            app:destination="@id/messageFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginPwdFragment"
+        android:name="cn.edu.gdou.jakec.campusbooking.LoginPwdFragment"
+        tools:layout="@layout/fragment_login_pwd">
+        <action
+            android:id="@+id/action_loginPwdFragment_to_authFragment"
+            app:destination="@id/authFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out"
+            app:popUpTo="@id/authFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/studyRoomFragment"
+        android:name="cn.edu.gdou.jakec.campusbooking.StudyRoomFragment"
+        tools:layout="@layout/fragment_study_room">
+        <action
+            android:id="@+id/action_studyRoomFragment_to_studyOrderFragment"
+            app:destination="@id/studyOrderFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/studyRoomFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_studyRoomFragment_to_studyScheduleFragment"
+            app:destination="@id/studyScheduleFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/studyRoomFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="room"
+            app:argType="cn.edu.gdou.jakec.campusbooking.data.StudyRoom" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/studyOrderFragment"
+        android:name="cn.edu.gdou.jakec.campusbooking.StudyOrderFragment"
+        tools:layout="@layout/fragment_study_order">
+        <argument
+            android:name="id"
+            app:argType="string" />
+        <argument
+            android:name="fromScan"
+            android:defaultValue="false"
+            app:argType="boolean" />
+        <action
+            android:id="@+id/action_studyOrderFragment_to_scanFragment"
+            app:destination="@id/scanFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_studyOrderFragment_to_studyRatingFragment"
+            app:destination="@id/studyRatingFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/studyOrderFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/scanFragment"
+        android:name="cn.edu.gdou.jakec.campusbooking.ScanFragment"
+        tools:layout="@layout/fragment_scan">
+        <action
+            android:id="@+id/action_scanFragment_to_studyOrderFragment"
+            app:destination="@id/studyOrderFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out"
+            app:popUpTo="@id/scanFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_scanFragment_to_studySeatFragment"
+            app:destination="@id/studySeatFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out"
+            app:popUpTo="@id/scanFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/studyRatingFragment"
+        android:name="cn.edu.gdou.jakec.campusbooking.StudyRatingFragment"
+        tools:layout="@layout/fragment_study_rating">
+        <argument
+            android:name="id"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="cn.edu.gdou.jakec.campusbooking.ProfileFragment"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_profileFragment_to_authFragment"
+            app:destination="@id/authFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out"
+            app:popUpTo="@id/studyFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_profileFragment_to_manageStudyApplyFragment"
+            app:destination="@id/manageStudyApplyFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/manageFragment"
+        android:name="cn.edu.gdou.jakec.campusbooking.ManageFragment"
+        tools:layout="@layout/fragment_manage">
+        <action
+            android:id="@+id/action_manageFragment_to_manageStudyRoomFragment"
+            app:destination="@id/manageStudyRoomFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_manageFragment_to_manageStudyRoomCreateFragment"
+            app:destination="@id/manageStudyRoomCreateFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_manageFragment_to_manageStudyCheckFragment"
+            app:destination="@id/manageStudyCheckFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_manageFragment_to_manageStudyRoomCheckFragment"
+            app:destination="@id/manageStudyRoomCheckFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/manageStudyRoomFragment"
+        android:name="cn.edu.gdou.jakec.campusbooking.ManageStudyRoomFragment"
+        android:label="fragment_manage_study_room"
+        tools:layout="@layout/fragment_manage_study_room">
+        <argument
+            android:name="room"
+            app:argType="cn.edu.gdou.jakec.campusbooking.data.StudyRoom" />
+        <action
+            android:id="@+id/action_manageStudyRoomFragment_to_codeFragment"
+            app:destination="@id/codeFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out"
+            app:popUpTo="@id/manageStudyRoomFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_manageStudyRoomFragment_to_manageStudyOrderFragment"
+            app:destination="@id/manageStudyOrderFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/manageStudyRoomFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_manageStudyRoomFragment_to_manageStudySeatCreateFragment"
+            app:destination="@id/manageStudySeatCreateFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/manageStudyRoomFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_manageStudyRoomFragment_to_manageStudyRoomEditFragment"
+            app:destination="@id/manageStudyRoomEditFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/manageStudyRoomFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_manageStudyRoomFragment_to_manageStudySeatEditFragment"
+            app:destination="@id/manageStudySeatEditFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/manageStudyRoomFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_manageStudyRoomFragment_to_manageStudyScheduleFragment"
+            app:destination="@id/manageStudyScheduleFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/manageStudyRoomFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/codeFragment"
+        android:name="cn.edu.gdou.jakec.campusbooking.CodeFragment"
+        android:label="fragment_code"
+        tools:layout="@layout/fragment_code">
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <argument
+            android:name="subtitle"
+            app:argType="string" />
+        <argument
+            android:name="text"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/manageStudyOrderFragment"
+        android:name="cn.edu.gdou.jakec.campusbooking.ManageStudyOrderFragment"
+        android:label="fragment_manage_study_order"
+        tools:layout="@layout/fragment_manage_study_order">
+        <argument
+            android:name="order"
+            app:argType="cn.edu.gdou.jakec.campusbooking.data.StudyOrder" />
+    </fragment>
+    <fragment
+        android:id="@+id/manageStudySeatCreateFragment"
+        android:name="cn.edu.gdou.jakec.campusbooking.ManageStudySeatCreateFragment"
+        android:label="fragment_manage_study_seat_create"
+        tools:layout="@layout/fragment_manage_study_seat_create">
+        <argument
+            android:name="roomId"
+            app:argType="string" />
+        <argument
+            android:name="xIndex"
+            app:argType="integer" />
+        <argument
+            android:name="yIndex"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/studySeatFragment"
+        android:name="cn.edu.gdou.jakec.campusbooking.StudySeatFragment"
+        android:label="StudySeatFragment"
+        tools:layout="@layout/fragment_study_seat">
+        <action
+            android:id="@+id/action_studySeatFragment_to_studyOrderFragment"
+            app:destination="@id/studyOrderFragment"
+            app:popUpTo="@id/studySeatFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="seat"
+            app:argType="cn.edu.gdou.jakec.campusbooking.data.StudySeat" />
+    </fragment>
+    <fragment
+        android:id="@+id/manageStudyRoomCreateFragment"
+        android:name="cn.edu.gdou.jakec.campusbooking.ManageStudyRoomCreateFragment"
+        android:label="ManageStudyRoomCreateFragment"
+        tools:layout="@layout/fragment_manage_study_room_create" />
+    <fragment
+        android:id="@+id/manageStudyRoomEditFragment"
+        android:name="cn.edu.gdou.jakec.campusbooking.ManageStudyRoomEditFragment"
+        android:label="ManageStudyRoomEditFragment"
+        tools:layout="@layout/fragment_manage_study_room_edit">
+        <argument
+            android:name="id"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/manageStudySeatEditFragment"
+        android:name="cn.edu.gdou.jakec.campusbooking.ManageStudySeatEditFragment"
+        android:label="ManageStudySeatEditFragment"
+        tools:layout="@layout/fragment_manage_study_seat_edit">
+        <argument
+            android:name="id"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/manageStudyScheduleFragment"
+        android:name="cn.edu.gdou.jakec.campusbooking.ManageStudyScheduleFragment"
+        android:label="ManageStudyScheduleFragment"
+        tools:layout="@layout/fragment_study_schedule">
+        <argument
+            android:name="room"
+            app:argType="cn.edu.gdou.jakec.campusbooking.data.StudyRoom" />
+    </fragment>
+    <fragment
+        android:id="@+id/studyScheduleFragment"
+        android:name="cn.edu.gdou.jakec.campusbooking.StudyScheduleFragment"
+        android:label="StudyScheduleFragment"
+        tools:layout="@layout/fragment_study_schedule">
+        <argument
+            android:name="room"
+            app:argType="cn.edu.gdou.jakec.campusbooking.data.StudyRoom" />
+    </fragment>
+    <fragment
+        android:id="@+id/manageStudyApplyFragment"
+        android:name="cn.edu.gdou.jakec.campusbooking.ManageStudyApplyFragment"
+        android:label="ManageStudyApplyFragment"
+        tools:layout="@layout/fragment_manage_study_apply" />
+    <fragment
+        android:id="@+id/manageStudyCheckFragment"
+        android:name="cn.edu.gdou.jakec.campusbooking.ManageStudyCheckFragment"
+        android:label="ManageStudyCheckFragment"
+        tools:layout="@layout/fragment_manage_study_check">
+        <argument
+            android:name="todo"
+            app:argType="cn.edu.gdou.jakec.campusbooking.data.ManageTodo" />
+    </fragment>
+    <fragment
+        android:id="@+id/manageStudyRoomApplyFrament"
+        android:name="cn.edu.gdou.jakec.campusbooking.ManageStudyRoomApplyFrament"
+        android:label="ManageStudyRoomApplyFrament"
+        tools:layout="@layout/fragment_manage_study_room_apply" />
+    <fragment
+        android:id="@+id/messageFragment"
+        android:name="cn.edu.gdou.jakec.campusbooking.MessageFragment"
+        android:label="MessageFragment"
+        tools:layout="@layout/fragment_message" />
+    <fragment
+        android:id="@+id/signupFragment"
+        android:name="cn.edu.gdou.jakec.campusbooking.SignupFragment"
+        android:label="SignupFragment"
+        tools:layout="@layout/fragment_signup">
+        <action
+            android:id="@+id/action_signupFragment_to_authFragment"
+            app:destination="@id/authFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out"
+            app:popUpTo="@id/authFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/manageStudyRoomCheckFragment"
+        android:name="cn.edu.gdou.jakec.campusbooking.ManageStudyRoomCheckFragment"
+        android:label="ManageStudyRoomCheckFragment"
+        tools:layout="@layout/fragment_manage_study_room_check">
+        <argument
+            android:name="todo"
+            app:argType="cn.edu.gdou.jakec.campusbooking.data.ManageTodo" />
+    </fragment>
+
+</navigation>

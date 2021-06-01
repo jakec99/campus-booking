@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/code"
+        android:title="@string/qr_code" />
+    <item
+        android:id="@+id/disable"
+        android:title="@string/disable" />
+    <item
+        android:id="@+id/edit"
+        android:title="@string/edit" />
+</menu>
